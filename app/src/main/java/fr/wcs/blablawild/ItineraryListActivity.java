@@ -17,32 +17,19 @@ public class ItineraryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itinerary_list);
 
-        /*
-        Intent intent = getIntent();
-        String departure = intent.getStringExtra("key_departure");
-        String destination = intent.getStringExtra("key_destination");
-
-        setTitle(departure + " >> " + destination);
-
-        Toast toast = Toast.makeText(getApplicationContext(),
-                getString(R.string.bienvenue),
-                Toast.LENGTH_LONG);
-
-        toast.show();*/
-
-
-
         ListView listTrip = findViewById(R.id.list_view);
         ArrayList<TripModel> results = new ArrayList<>();
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-kk:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat(getResources().getString(R.string.date_pattern));
+
+
 
         try {
-            results.add(new TripModel("Eric", "Cartman", sdf.parse("21/02/2017-15:30"), 15));
-            results.add(new TripModel("Stan", "Marsh", sdf.parse("21/02/2017-16:00"), 20));
-            results.add(new TripModel("Kenny", "Broflovski", sdf.parse("21/02/2017-16:30"), 16));
-            results.add(new TripModel("Kyle", "McCormick", sdf.parse("21/02/2017-17:00"), 40));
-            results.add(new TripModel("Wendy", "Testaburger", sdf.parse("21/02/2017-17:30"), 20));
+            results.add(new TripModel(getString(R.string.name_eric), getString(R.string.lastaname_eric), sdf.parse(getString(R.string.date_cartman)), 15));
+            results.add(new TripModel(getString(R.string.name_stan), getString(R.string.lastname_marsh), sdf.parse(getString(R.string.date_stan)), 20));
+            results.add(new TripModel(getString(R.string.name_kenny), getString(R.string.lastname_broflovski), sdf.parse(getString(R.string.date_kenny)), 16));
+            results.add(new TripModel(getString(R.string.name_kyle), getString(R.string.lastname_mccormick), sdf.parse(getString(R.string.date_kyle)), 40));
+            results.add(new TripModel(getString(R.string.name_wendy), getString(R.string.lastname_testaburger), sdf.parse(getString(R.string.date_wendy)), 20));
         } catch (ParseException e) {
         }
         TripAdapter adapter = new TripAdapter(this, results);

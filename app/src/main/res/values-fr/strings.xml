@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blablawild</string>
+    <string name="action_settings">Réglages</string>
+    <string name="search_text">Recherche</string>
+    <string name="search_an_itinerary">Chercher un trajet</string>
+    <string name="random_stuff">Des choses au hasard</string>
+    <string name="action">Action</string>
+    <string name="departure">Départ</string>
+    <string name="departure_input">Départ</string>
+    <string name="destination">Destination</string>
+    <string name="destination_input">Destination</string>
+    <string name="please_fill">Veuillez renseigner un départ et une destination</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom de famille</string>
+</resources>

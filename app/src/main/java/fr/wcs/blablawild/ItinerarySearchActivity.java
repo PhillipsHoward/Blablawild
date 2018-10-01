@@ -61,7 +61,7 @@ public class ItinerarySearchActivity extends AppCompatActivity {
     }
 
     private void updateLabel() {
-        String myFormat = "dd/MM/yy"; //In which you need put here
+        String myFormat = getString(R.string.date_my_format); //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
         dateInput.setText(sdf.format(myCalendar.getTime()));

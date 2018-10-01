@@ -22,4 +22,40 @@
 
     <string name="bienvenue">BIENVENUE</string>
 
+    <!--item_trip-->
+
+    <string name="firstname">Firstname</string>
+    <string name="date_example">31/12/2014 03:40 PM</string>
+    <string name="lastname">Lastname</string>
+    <string name="price_example">$19</string>
+
+    <!--ItineraryListActivity-->
+    <string name="date_pattern">dd/MM/yyyy-kk:mm</string>
+    <string name="name_eric">Eric</string>
+    <string name="lastaname_eric">Cartman</string>
+    <string name="name_stan">Stan</string>
+    <string name="name_kenny">Kenny</string>
+    <string name="name_kyle">Kyle</string>
+    <string name="name_wendy">Wendy</string>
+    <string name="lastname_marsh">Marsh</string>
+    <string name="lastname_broflovski">Broflovski</string>
+    <string name="lastname_mccormick">McCormick</string>
+    <string name="lastname_testaburger">Testaburger</string>
+    <string name="date_cartman">21/02/2017-15:30</string>
+    <string name="date_stan">21/02/2017-16:00</string>
+    <string name="date_kenny">21/02/2017-16:30</string>
+    <string name="date_kyle">21/02/2017-17:00</string>
+    <string name="date_wendy">21/02/2017-17:30</string>
+
+    <!--ItinerarySearchActivity-->
+
+    <string name="date_my_format">dd/MM/yy</string>
+
+    <!--TripAdapter-->
+
+    
+
+
+
+
 </resources>

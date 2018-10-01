@@ -13,8 +13,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Initialazing variables
-    Button buttonSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
